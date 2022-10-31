@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var money;
+    var month;
+    var profit = 0;
+    do {
+        money = +prompt("số tiền bạn muốn gửi vào ngân hàng:");
+    } while (money < 0);
+    do {
+        month = +prompt("số tháng bạn muốn gửi vào ngân hàng:");
+    } while (month < 0)
+    var sum = money;
+    for (let i = 1; i <= month; i++) {
+
+        profit = sum * 0.12;
+        sum = money+ profit;
+    }
+    document.write("tiền lãi sau " + month + " là:" + sum);
+</script>
+</html>

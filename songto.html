@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let status =1;
+    let num=2;
+    document.write("20 số nguyên tố đầu tiên là: <br>")
+    for (let i = 2; i <=21 ; ) {
+        for (let j = 2; j <=Math.sqrt(num) ; j++) {
+            if(num%j==0){
+                status =0;
+                break;
+        }
+    }
+        if(status==1){
+            document.write(num+"<br>");
+            i++;
+        }
+        status=1;
+        num++;
+    }
+
+</script>
+</html>
